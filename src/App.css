@@ -11,11 +11,17 @@
   margin-bottom: 2rem !important;
   gap: 1rem !important;
   display: grid !important;
-  grid-template-columns: repeat(4, 1fr) !important;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media screen and (min-width: 1050px) {
   .desktopView {
     grid-template-columns: repeat(4, 1fr) !important;
+  }
+}
+@media screen and (min-width: 1050px) {
+  .mt-6 {
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(22%, 1fr));
   }
 }
