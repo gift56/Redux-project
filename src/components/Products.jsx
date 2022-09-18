@@ -1,5 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
+import Product from "./Product";
 
 const Products = () => {
   const products = useSelector((state) => state);
@@ -8,7 +9,7 @@ const Products = () => {
 
   return (
     <div className="ui grid container">
-      <h1>Products</h1>
+      <Product />
     </div>
   );
 };
