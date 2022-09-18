@@ -1,9 +1,25 @@
-import React from 'react'
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+import axios from "axios";
+import { useDispatch } from "react-redux";
+import { selectedProduct } from "../redux/actions/productActions";
 
 const ProductsDetails = () => {
-  return (
-    <div>ProductsDetails</div>
-  )
-}
+  const { productId } = useParams();
+  const dispatch = useDispatch();
 
-export default ProductsDetails
+  const fetchSingleProduct = async () => {
+    const res = await axios
+      .get(`https://fakestoreapi.com/products/${productId}`)
+      .catch((err) => console.log("ERR", err));
+
+    dispatch(selectedProduct(res.data));
+  };
+
+  useEffect(() => {
+    fetchSingleProduct();
+  }, [productId]);
+  return <div>ProductsDetails</div>;
+};
+
+export default ProductsDetails;
