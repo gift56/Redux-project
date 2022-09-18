@@ -5,8 +5,6 @@ import Product from "./Product";
 const Products = () => {
   const products = useSelector((state) => state);
 
-  console.log(products);
-
   return (
     <div className="ui grid container">
       <Product />
