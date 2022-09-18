@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import "../App.css";
 
 const Product = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -8,7 +9,10 @@ const Product = () => {
   const renderItem = products.map((product) => {
     const { id, title, price, category, image } = product;
     return (
-      <div className="wide column" key={id}>
+      <div
+        className="wide column mt-6"
+        key={id}
+      >
         <Link to={`/product/${id}`}>
           <div className="ui cards link">
             <div className="ui card">

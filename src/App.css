@@ -1,0 +1,12 @@
+.myCard {
+  align-items: flex-end;
+  height: 100%;
+}
+.mt-5 {
+  margin-top: 2rem !important;
+  margin-bottom: 1rem !important;
+}
+.mt-6 {
+  margin-top: 5rem !important;
+  margin-bottom: 2rem !important;
+}

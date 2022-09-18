@@ -6,6 +6,7 @@ import {
   selectedProduct,
   removeSelectedProduct,
 } from "../redux/actions/productActions";
+import "../App.css";
 
 const ProductsDetails = () => {
   const product = useSelector((state) => state.product);
@@ -28,11 +29,14 @@ const ProductsDetails = () => {
     };
   }, [productId]);
   return (
-    <div className="ui grid container">
+    <div className="ui grid container mt-5">
       {Object.keys(product).length === 0 ? (
         <div>...Loading</div>
       ) : (
-        <div className="ui placeholder segment">
+        <div
+          className="ui placeholder segment mt-5"
+          
+        >
           <div className="ui two column stackable center aligned grid">
             <div className="ui vertical divider">AND</div>
             <div className="middle aligned row">
@@ -42,7 +46,9 @@ const ProductsDetails = () => {
               <div className="column rp">
                 <h1>{title}</h1>
                 <h2>
-                  <a href="#price" className="ui teal tag label">${price}</a>
+                  <a href="#price" className="ui teal tag label">
+                    ${price}
+                  </a>
                 </h2>
                 <h3 className="ui brown block header">{category}</h3>
                 <p>{description}</p>
