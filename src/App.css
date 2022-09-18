@@ -1,5 +1,15 @@
 .myCard {
-  align-items: flex-end;
+  min-height: 481px;
+  object-fit: cover;
+}
+.myImg {
+  width: 204px;
+  margin: 0 auto !important;
+}
+.myImg img {
+  width: 100%;
+}
+.h-1 {
   height: 100%;
 }
 .mt-5 {
@@ -12,12 +22,6 @@
   gap: 1rem !important;
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-@media screen and (min-width: 1050px) {
-  .desktopView {
-    grid-template-columns: repeat(4, 1fr) !important;
-  }
 }
 @media screen and (min-width: 1050px) {
   .mt-6 {

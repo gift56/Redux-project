@@ -11,9 +11,9 @@ const Product = () => {
     return (
       <div className={`wide desktopView`} key={id}>
         <Link to={`/product/${id}`}>
-          <div className="ui cards link">
-            <div className="ui card">
-              <div className="image">
+          <div className="ui cards link myCard">
+            <div className="ui card h-1">
+              <div className="myImg">
                 <img src={image} alt={title} />
               </div>
               <div className="content">
