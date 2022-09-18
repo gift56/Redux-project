@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="ui fixed menu">
-      <div className="ui container center">
+    <div className="">
+      <div className="">
         <Link to="/" style={{ color: "black" }}>
           <h2>FreeShop</h2>
         </Link>
