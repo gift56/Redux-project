@@ -24,8 +24,10 @@ const Products = () => {
   console.log("Products: ", products);
 
   return (
-    <div className="ui grid container">
-      <Product />
+    <div className="ui grid container four">
+      <div className="four column row">
+        <Product />
+      </div>
     </div>
   );
 };

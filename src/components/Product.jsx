@@ -7,9 +7,9 @@ const Product = () => {
   const renderItem = products.map((product) => {
     const { id, title, price, category, image } = product;
     return (
-      <div className="four column wide" key={id}>
-        <div className="ui link cards">
-          <div className="card">
+      <div className="wide column" key={id}>
+        <div className="ui cards link">
+          <div className="ui card">
             <div className="image">
               <img src={image} alt={title} />
             </div>
