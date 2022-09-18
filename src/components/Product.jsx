@@ -9,10 +9,7 @@ const Product = () => {
   const renderItem = products.map((product) => {
     const { id, title, price, category, image } = product;
     return (
-      <div
-        className="wide column mt-6"
-        key={id}
-      >
+      <div className={`wide desktopView`} key={id}>
         <Link to={`/product/${id}`}>
           <div className="ui cards link">
             <div className="ui card">

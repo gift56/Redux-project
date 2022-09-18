@@ -9,4 +9,13 @@
 .mt-6 {
   margin-top: 5rem !important;
   margin-bottom: 2rem !important;
+  gap: 1rem !important;
+  display: grid !important;
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+@media screen and (min-width: 1050px) {
+  .desktopView {
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
 }
